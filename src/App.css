@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css?family=Miriam+Libre");
+body,
+html {
+  margin: 0;
+  height: 100%;
+}
+
+.app {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  background-color: #e96151;
+}
+
+.center {
+  align-self: center;
+  background-color: #366774;
+
+  width: 600px;
+  bottom: 50px;
+}
+
+h1 {
+  position: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Miriam Libre", sans-serif;
+}
+
+.box-title {
+  position: relative;
+  left: 130px;
+  bottom: 320px;
+  height: 100px;
+  width: 250px;
+  background-color: #366774;
+  opacity: 0.8;
+}
+
+.box-title-light {
+  position: relative;
+  left: 130px;
+  bottom: 320px;
+  height: 100px;
+  width: 250px;
+  background-color: #ecece7;
+  opacity: 0.8;
+}
+
+h2 {
+  padding-top: 20px;
+  text-align: center;
+  font-family: "Miriam Libre", sans-serif;
+}
+
+.box-title-text {
+  color: #000000;
+  text-decoration: none;
+}
+
+.box-container {
+  display: flex;
+  flex: 4;
+  position: center;
+  justify-content: space-between;
+  padding: 50px 50px 50px 50px;
+  background-color: #ecece7;
+}
+
+.canvas1 {
+  flex: 1;
+  align-self: center;
+  display: block;
+  background-color: #e96151;
+  height: 500px;
+  width: 500px;
+  padding: 60px 60px 60px 70px;
+}
+
+.p5 {
+  position: center;
+  left: 300px;
+}
+
+.explanation {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+}
+
+.explanation-box {
+  position: relative;
+  bottom: 70px;
+}
+
+.explanation1 {
+  text-orientation: sideways;
+}
+
+.section {
+  /* position: absolute; */
+  /* top: 0;
+  left: 0; */
+  flex: 1;
+  background: #ffffff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+p {
+  height: 100%;
+  background: #000000;
+  color: #ffffff;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.pointer {
+  position: absolute;
+  /* top: 50%;
+  left: 50%; */
+  transform: translate(-160%, -25%);
+  width: 300px;
+  height: 300px;
+  background: #ffffff;
+  border-radius: 50%;
+  pointer-events: none;
+  mix-blend-mode: difference;
+}
+
+.buttonLeft {
+  mix-blend-mode: difference;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.top-right {
+  mix-blend-mode: difference;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  float: right;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
