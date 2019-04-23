@@ -57,7 +57,7 @@ class About extends Component {
           <h3>About me..</h3>
           <p>
             The left drawing summarizes perfectly my life at 95% accuracy. I
-            make plans, and life challenge them. I started off as an artist,
+            make plans, and life challenges them. I started off as an artist,
             life dragged me to study business. I received my business diploma
             after 5 years, and got a job as a Digital Marketer at Haravrd
             Innovation Lab. I picked up interest in creating mock ups, and got
