@@ -12,6 +12,7 @@ html {
   align-content: center;
   justify-content: center;
   background-color: #e96151;
+  margin: 20px 20px 20px 20px;
 }
 
 .center {
@@ -76,7 +77,7 @@ h2 {
   display: block;
   background-color: #e96151;
   height: 500px;
-  width: 500px;
+  max-width: 500px;
   padding: 60px 60px 60px 70px;
 }
 

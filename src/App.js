@@ -5,17 +5,53 @@ import About from "./components/About";
 import Education from "./components/Education";
 import Work from "./components/Work";
 import Random from "./components/Random";
-import { CSSTransition, TransitionGroup } from "react-transition-group";
+import { AnimatedRoute } from "react-router-transition";
 
 class App extends Component {
   render() {
     return (
       <Router>
         <Route exact path="/" component={Home} />
-        <Route path="/About" component={About} />
-        <Route path="/Education" component={Education} />
-        <Route path="/Work" component={Work} />
-        <Route path="/Random" component={Random} />
+        <AnimatedRoute
+          path="/About"
+          component={About}
+          atEnter={{ offset: -100 }}
+          atLeave={{ offset: -100 }}
+          atActive={{ offset: 0 }}
+          mapStyles={styles => ({
+            transform: `translateX(${styles.offset}%)`
+          })}
+        />
+        <AnimatedRoute
+          path="/Education"
+          component={Education}
+          atEnter={{ offset: -100 }}
+          atLeave={{ offset: -100 }}
+          atActive={{ offset: 0 }}
+          mapStyles={styles => ({
+            transform: `translateX(${styles.offset}%)`
+          })}
+        />
+        <AnimatedRoute
+          path="/Work"
+          component={Work}
+          atEnter={{ offset: -100 }}
+          atLeave={{ offset: -100 }}
+          atActive={{ offset: 0 }}
+          mapStyles={styles => ({
+            transform: `translateX(${styles.offset}%)`
+          })}
+        />
+        <AnimatedRoute
+          path="/Random"
+          component={Random}
+          atEnter={{ offset: -100 }}
+          atLeave={{ offset: -100 }}
+          atActive={{ offset: 0 }}
+          mapStyles={styles => ({
+            transform: `translateX(${styles.offset}%)`
+          })}
+        />
       </Router>
     );
   }
