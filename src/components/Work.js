@@ -4,47 +4,54 @@ import ReactTypingEffect from "react-typing-effect";
 import "./Component.css";
 
 const width = window.innerWidth / 2;
-var height = window.innerHeight;
+const height = window.innerHeight;
 
 class Work extends Component {
   sketch1 = p => {
-    let num = 2000;
-    let range = 6;
-
-    let ax = [];
-    let ay = [];
-
+    let theta;
     p.setup = function() {
       p.createCanvas(width, height);
-      for (let i = 0; i < num; i++) {
-        ax[i] = width / 2;
-        ay[i] = height / 2;
-      }
-      p.frameRate(30);
     };
 
     p.draw = function() {
       p.background(233, 97, 81);
+      p.frameRate(30);
+      p.stroke(255);
+      // Let's pick an angle 0 to 90 degrees based on the mouse position
+      let a = (p.mouseX / width) * 90;
+      // Convert it to radians
+      theta = p.radians(a);
+      // Start the tree from the middle of the screen - changed height /1.5 instaed of height
+      p.translate(width / 2, height / 1.5);
+      // Draw a line 120 pixels
+      p.line(0, 0, 0, -120);
+      // Move to the end of that line
+      p.translate(0, -120);
+      // Start the recursive branching!
+      p.branch(120);
+    };
 
-      // Shift all elements 1 place to the left
-      for (let i = 1; i < num; i++) {
-        ax[i - 1] = ax[i];
-        ay[i - 1] = ay[i];
-      }
+    p.branch = function(h) {
+      // Each branch will be 2/3rds the size of the previous one
+      h *= 0.66;
 
-      // Put a new value at the end of the array
-      ax[num - 1] += p.random(-range, range);
-      ay[num - 1] += p.random(-range, range);
+      // All recursive functions must have an exit condition!!!!
+      // Here, ours is when the length of the branch is 2 pixels or less
+      if (h > 2) {
+        p.push(); // Save the current state of transformation (i.e. where are we now)
+        p.rotate(theta); // Rotate by theta
+        p.line(0, 0, 0, -h); // Draw the branch
+        p.translate(0, -h); // Move to the end of the branch
+        p.branch(h); // Ok, now call myself to draw two new branches!!
+        p.pop(); // Whenever we get back here, we "pop" in order to restore the previous matrix state
 
-      // Constrain all points to the screen
-      ax[num - 1] = p.constrain(ax[num - 1], 0, width);
-      ay[num - 1] = p.constrain(ay[num - 1], 0, height);
-
-      // Draw a line connecting the points
-      for (let j = 1; j < num; j++) {
-        let val = (j / num) * 204.0 + 51;
-        p.stroke(val);
-        p.line(ax[j - 1], ay[j - 1], ax[j], ay[j]);
+        // Repeat the same thing, only branch off to the "left" this time!
+        p.push();
+        p.rotate(-theta);
+        p.line(0, 0, 0, -h);
+        p.translate(0, -h);
+        p.branch(h);
+        p.pop();
       }
     };
   };
@@ -55,9 +62,13 @@ class Work extends Component {
           <P5Wrapper className="p5" sketch={this.sketch1} />
         </div>
         <div className="text-side">
-          <h3>What life has educated me..</h3>
+          <h3>Career path can also be zigzaggy</h3>
           <p>
-            brr
+            People have a notion of a career ladder, that skillsets and
+            experiences should bring you up and up. And though I agree that
+            patience and time perfects you at a skillset, it does not make you a
+            well rounded person. And, as I experinced different educational
+            background, I also experienced a difference in working culture.
             <br />
             <br />
             brr to be filled

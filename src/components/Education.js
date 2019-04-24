@@ -64,7 +64,7 @@ class Education extends Component {
         <div className="text-side">
           <h3>What life has educated me..</h3>
           <p>
-            brr
+            Let's talk about post-soviet vs american education
             <br />
             <br />
             brr to be filled
