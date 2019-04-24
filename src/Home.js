@@ -115,7 +115,7 @@ class Home extends Component {
             <div className="box-title-light">
               <h2>
                 <Link to="/Work" className="box-title-text">
-                  Questionable past about me
+                  Level of professionalism
                 </Link>
               </h2>
             </div>
@@ -133,7 +133,7 @@ class Home extends Component {
             <div className="box-title">
               <h2>
                 <Link to="/Random" className="box-title-text">
-                  Questionable past about me
+                  Wholesome randomness
                 </Link>
               </h2>
             </div>

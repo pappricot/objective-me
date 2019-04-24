@@ -4,7 +4,7 @@ import ReactTypingEffect from "react-typing-effect";
 import "./Component.css";
 
 const width = window.innerWidth / 2;
-var height = window.innerHeight;
+const height = window.innerHeight;
 
 class About extends Component {
   sketch1 = p => {
@@ -57,12 +57,12 @@ class About extends Component {
         <div className="text-side">
           <h3>About me..</h3>
           <p>
-            The left drawing summarizes perfectly my life at 95% accuracy. I
-            make plans, and life challenges them. I started off as an artist,
-            life dragged me to study business. I received my business diploma
-            after 5 years, and got a job as a Digital Marketer at Haravrd
-            Innovation Lab. I picked up interest in creating mock ups, and got
-            my next gig at a digital agency.
+            This Brownian motion summarizes perfectly collisions of events that
+            shaped my life path. I make plans, and life challenges them. I
+            started off as an artist, life dragged me to study business. I
+            received my business diploma after 5 years, and got a job as a
+            Digital Marketer at Haravrd Innovation Lab. I picked up interest in
+            creating mock ups, and got my next gig at a digital agency.
             <br />
             <br />
             My zigzagy path didn't stop evolving and turned my ineterst deeper
