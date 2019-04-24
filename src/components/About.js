@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import P5Wrapper from "react-p5-wrapper";
-import "./About.css";
+import ReactTypingEffect from "react-typing-effect";
+import "./Component.css";
 
 const width = window.innerWidth / 2;
 var height = window.innerHeight;
@@ -61,13 +62,23 @@ class About extends Component {
             life dragged me to study business. I received my business diploma
             after 5 years, and got a job as a Digital Marketer at Haravrd
             Innovation Lab. I picked up interest in creating mock ups, and got
-            my next gig at a digital agency. <br /> My zigzagy path didn't stop
-            evolving and turned my ineterst deeper towards coding, dabbing here
-            and there for friens' projects, and finally landing a job to become
-            a mobile developer (thanks to my so cald "charity" work by my
-            parents, my friend's dad has been observing my work with his son's
-            project and kindly offered me this paid gig! Wisdom of the day:
-            Kindness does pay off! )
+            my next gig at a digital agency.
+            <br />
+            <br />
+            My zigzagy path didn't stop evolving and turned my ineterst deeper
+            towards coding, dabbing here and there for friens' projects, and
+            finally landing a job to become a mobile developer: thanks to my so
+            cald "charity" work by my parents, my friend's dad has been
+            observing my work with his son's project and kindly offered me this
+            paid gig!
+            <br />
+            <br />
+            <br />
+            <br />
+            <ReactTypingEffect
+              text="Wisdom of the day (and the rest of my life :) : Kindness pays off "
+              eraseDelay="2500"
+            />
           </p>
         </div>
       </div>

@@ -13,7 +13,7 @@ class Home extends Component {
 
     p.draw = function() {
       if (p.mouseIsPressed) {
-        p.fill(236, 236, 231);
+        p.fill(233, 97, 82);
       } else {
         p.fill(54, 103, 116);
       }
@@ -31,7 +31,7 @@ class Home extends Component {
       if (p.mouseIsPressed) {
         p.fill(54, 103, 116);
       } else {
-        p.fill(255);
+        p.fill(233, 97, 82);
       }
       p.ellipse(p.mouseX, p.mouseY, 80, 80);
     };
@@ -47,7 +47,7 @@ class Home extends Component {
       if (p.mouseIsPressed) {
         p.fill(54, 103, 116);
       } else {
-        p.fill(255);
+        p.fill(233, 97, 82);
       }
       p.ellipse(p.mouseX, p.mouseY, 80, 80);
     };
@@ -61,7 +61,7 @@ class Home extends Component {
 
     p.draw = function() {
       if (p.mouseIsPressed) {
-        p.fill(236, 236, 231);
+        p.fill(233, 97, 82);
       } else {
         p.fill(54, 103, 116);
       }

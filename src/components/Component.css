@@ -12,10 +12,12 @@
 
 .draw-side {
   flex: 1;
+  background-color: #e96151;
 }
 
 .text-side {
   flex: 1;
+  background-color: #366774;
 }
 
 h3 {
@@ -25,6 +27,7 @@ h3 {
 }
 
 p {
+  flex-direction: column;
   background-color: #366774;
   font-family: "Miriam Libre", sans-serif;
 }

@@ -29,6 +29,7 @@ h1 {
   text-transform: uppercase;
   text-align: center;
   font-family: "Miriam Libre", sans-serif;
+  color: #e96151;
 }
 
 .box-title {
@@ -55,10 +56,11 @@ h2 {
   padding-top: 20px;
   text-align: center;
   font-family: "Miriam Libre", sans-serif;
+  color: #366774;
 }
 
 .box-title-text {
-  color: #000000;
+  color: #e96151;
   text-decoration: none;
 }
 
@@ -68,7 +70,7 @@ h2 {
   position: center;
   justify-content: space-between;
   padding: 50px 50px 50px 50px;
-  background-color: #ecece7;
+  background-color: #e96151;
 }
 
 .canvas1 {
