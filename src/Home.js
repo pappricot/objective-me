@@ -14,8 +14,10 @@ class Home extends Component {
     p.draw = function() {
       if (p.mouseIsPressed) {
         p.fill(233, 97, 82);
+        p.stroke(54, 103, 116);
       } else {
         p.fill(54, 103, 116);
+        p.stroke(233, 97, 82);
       }
       p.ellipse(p.mouseX, p.mouseY, 80, 80);
     };
@@ -29,9 +31,11 @@ class Home extends Component {
 
     p.draw = function() {
       if (p.mouseIsPressed) {
-        p.fill(54, 103, 116);
-      } else {
         p.fill(233, 97, 82);
+        p.stroke(54, 103, 116);
+      } else {
+        p.fill(54, 103, 116);
+        p.stroke(233, 97, 82);
       }
       p.ellipse(p.mouseX, p.mouseY, 80, 80);
     };
@@ -45,9 +49,11 @@ class Home extends Component {
 
     p.draw = function() {
       if (p.mouseIsPressed) {
-        p.fill(54, 103, 116);
-      } else {
         p.fill(233, 97, 82);
+        p.stroke(54, 103, 116);
+      } else {
+        p.fill(54, 103, 116);
+        p.stroke(233, 97, 82);
       }
       p.ellipse(p.mouseX, p.mouseY, 80, 80);
     };
@@ -62,8 +68,10 @@ class Home extends Component {
     p.draw = function() {
       if (p.mouseIsPressed) {
         p.fill(233, 97, 82);
+        p.stroke(54, 103, 116);
       } else {
         p.fill(54, 103, 116);
+        p.stroke(233, 97, 82);
       }
       p.ellipse(p.mouseX, p.mouseY, 80, 80);
     };
@@ -86,10 +94,7 @@ class Home extends Component {
 
           <section className="explanation">
             <h2 className="explanation">
-              <ReactTypingEffect
-                text="Click around before proceed"
-                eraseDelay="2500"
-              />
+              <ReactTypingEffect text="Poke around" eraseDelay="2500" />
             </h2>
           </section>
           <section className="canvas1">
@@ -122,10 +127,7 @@ class Home extends Component {
           </section>
           <section className="explanation">
             <h2 className="explanation">
-              <ReactTypingEffect
-                text="Click around before proceed"
-                eraseDelay="2500"
-              />
+              <ReactTypingEffect text="Poke around" eraseDelay="2500" />
             </h2>
           </section>
           <section className="canvas1">

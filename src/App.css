@@ -12,13 +12,13 @@ html {
   align-content: center;
   justify-content: center;
   background-color: #e96151;
-  margin: 20px 20px 20px 20px;
+  /* margin: 20px 20px 20px 20px; */
 }
 
 .center {
   align-self: center;
   background-color: #366774;
-
+  height: 100px;
   width: 600px;
   bottom: 50px;
 }
@@ -30,6 +30,7 @@ h1 {
   text-align: center;
   font-family: "Miriam Libre", sans-serif;
   color: #e96151;
+  margin-top: 10px;
 }
 
 .box-title {
@@ -162,4 +163,19 @@ p {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+}
+
+/* Media queries */
+@media screen and (min-width: 600px) {
+  .app {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 600px) {
+  .app {
+    flex-direction: column;
+  }
+  .box-container {
+    flex-direction: column;
+  }
 }

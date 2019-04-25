@@ -61,12 +61,12 @@ class Random extends Component {
           <P5Wrapper className="p5" sketch={this.sketch1} />
         </div>
         <div className="text-side">
-          <h3>What life has educated me..</h3>
+          <h3>the random fact is..</h3>
           <p>
-            brr
+            I'm terrified of tickles ;(
             <br />
             <br />
-            brr to be filled
+            (hover over the word!)
             <br />
             <br />
             <br />
