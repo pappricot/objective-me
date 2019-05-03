@@ -29,8 +29,8 @@ class Work extends Component {
       p.stroke(0, 0, 0, 255);
 
       // start the x and y position at lower-left corner
-      x = 0;
-      y = height - 1;
+      x = width / 2;
+      y = height / 2 - 1;
 
       // COMPUTE THE L-SYSTEM
       for (let i = 0; i < numloops; i++) {
