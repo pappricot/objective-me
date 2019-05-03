@@ -92,11 +92,6 @@ class Home extends Component {
             </div>
           </section>
 
-          <section className="explanation">
-            <h2 className="explanation">
-              <ReactTypingEffect text="Poke around" eraseDelay="2500" />
-            </h2>
-          </section>
           <section className="canvas1">
             <P5Wrapper className="p5" sketch={this.sketch2} />
             <div className="box-title-light">
@@ -125,11 +120,7 @@ class Home extends Component {
               </h2>
             </div>
           </section>
-          <section className="explanation">
-            <h2 className="explanation">
-              <ReactTypingEffect text="Poke around" eraseDelay="2500" />
-            </h2>
-          </section>
+
           <section className="canvas1">
             <P5Wrapper className="p5" sketch={this.sketch4} />
             <div className="box-title">

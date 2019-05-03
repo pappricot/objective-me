@@ -1,11 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Miriam+Libre");
+
+@media only screen and (min-width: 414px) and (max-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+  .app {
+    min-width: 414px;
+    max-width: 736px;
+  }
+}
+
 @media screen and (min-width: 800px) {
   .box-container {
     display: flex;
-    flex: 4;
+    flex: 3;
     position: center;
     justify-content: space-between;
-    padding: 50px 50px 50px 50px;
-    background-color: #e96151;
+    /* padding: 50px 50px 50px 50px; */
+    /* background-color: #e96151; */
+    background-color: white;
   }
   .center {
     align-self: center;
@@ -15,24 +25,21 @@
     bottom: 50px;
   }
   .explanation {
-    writing-mode: vertical-lr;
-    text-orientation: upright;
+    display: none;
   }
 }
 
-@import url("https://fonts.googleapis.com/css?family=Miriam+Libre");
-body,
-html {
-  margin: 0;
-  height: 100%;
-}
-
 .app {
+  height: auto;
+  margin: 0px auto;
+  position: relative;
   display: flex;
   flex: 1;
   flex-direction: column;
   align-content: center;
   justify-content: center;
+  position: center;
+  max-width: 1280px;
   background-color: #e96151;
   /* margin: 20px 20px 20px 20px; */
 }
@@ -95,7 +102,8 @@ h2 {
 }
 
 .explanation {
-  display: hidden;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
 }
 
 .explanation-box {
