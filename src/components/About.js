@@ -56,7 +56,7 @@ class About extends Component {
         </div>
         <div className="text-side">
           <h3>About me..</h3>
-          <p>
+          <p className="p-text">
             This Brownian motion summarizes perfectly collisions of events that
             shaped my life path. I make plans, and life challenges them. I
             started off as an artist, life dragged me to study business. I

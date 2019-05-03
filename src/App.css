@@ -1,18 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Miriam+Libre");
 
-@media only screen and (min-width: 414px) and (max-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+/* @media only screen and (min-width: 414px) and (max-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
   .app {
     min-width: 414px;
     max-width: 736px;
   }
-}
+} */
 
 @media screen and (min-width: 800px) {
   .box-container {
     display: flex;
     flex: 3;
     position: center;
-    justify-content: space-between;
+    justify-content: space-around;
     /* padding: 50px 50px 50px 50px; */
     /* background-color: #e96151; */
     background-color: white;
@@ -34,7 +34,7 @@
   margin: 0px auto;
   position: relative;
   display: flex;
-  flex: 1;
+  flex-wrap: wrap;
   flex-direction: column;
   align-content: center;
   justify-content: center;

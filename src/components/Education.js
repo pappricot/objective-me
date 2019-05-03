@@ -62,7 +62,7 @@ class Education extends Component {
           <P5Wrapper className="p5" sketch={this.sketch1} />
         </div>
         <div className="text-side">
-          <h3>What life has educated me..</h3>
+          <h3>What life has taught me..</h3>
           <p>
             Let's talk about post-soviet vs american education
             <br />
